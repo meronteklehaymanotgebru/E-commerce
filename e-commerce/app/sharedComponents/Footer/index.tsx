@@ -1,7 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaRegCopyright } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaRegCopyright,
+} from "react-icons/fa";
 import Image from "next/image";
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -18,13 +24,13 @@ const Footer = () => {
           <h3 className="text-2xl font-bold mb-3">Exclusive</h3>
           <h4 className="text-lg font-semibold mb-2">Subscribe</h4>
           <p className="text-gray-400 mb-4">Get 10% off your first order</p>
-          <div className="flex border border-white rounded overflow-hidden">
+          <div className="flex border border-white rounded overflow-hidden w-50">
             <input
               type="email"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-transparent px-3 py-2 flex-grow outline-white text-sm"
+              className="bg-transparent px-3 py-2 flex-grow outline-white text-sm w-40"
             />
             <button
               onClick={handleSend}
@@ -44,31 +50,70 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-3">Account</h3>
-          {["My Account", "Login / Register", "Cart", "Wishlist", "Shop"].map((item, i) => (
-            <p key={i} className="text-gray-400 mb-2 hover:text-white cursor-pointer">{item}</p>
-          ))}
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            My Account
+          </p>
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            Login / Register
+          </p>
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            Cart
+          </p>
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            Wishlist
+          </p>
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            Shop
+          </p>
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Link</h3>
-          {["Privacy Policy", "Terms Of Use", "FAQ", "Contact"].map((item, i) => (
-            <p key={i} className="text-gray-400 mb-2 hover:text-white cursor-pointer">{item}</p>
-          ))}
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            Privacy Policy
+          </p>
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            Terms Of Use
+          </p>
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            FAQ
+          </p>
+          <p className="text-gray-400 mb-2 hover:text-white cursor-pointer">
+            Contact
+          </p>
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-2">Download App</h3>
-          <p className="text-gray-400 text-sm mb-4">Save $3 with App New User Only</p>
+          <p className="text-gray-400 text-sm mb-4">
+            Save $3 with App New User Only
+          </p>
           <div className="flex items-start gap-3">
             <Image src="/images/qr.png" alt="QR code" width={120} height={100} />
             <div className="flex flex-col gap-3">
-              <a href="#" className="border-2 flex items-center  text-white px-3 py-1 rounded-lg w-42 hover:opacity-80 transition">
-                <Image src="/images/playstore.jpg" alt="Google Play" width={24} height={24} />
+              <a
+                href="#"
+                className="border-2 flex items-center text-white px-3 py-1 rounded-lg hover:opacity-80 transition"
+              >
+                <Image
+                  src="/images/playstore.jpg"
+                  alt="Google Play"
+                  width={24}
+                  height={24}
+                />
                 <div className="ml-2">
                   <p className="text-[10px]">GET IT ON</p>
                   <p className="text-lg font-semibold">Google Play</p>
                 </div>
               </a>
-              <a href="#" className="border-2 flex items-center  text-white px-3 py-1 rounded-lg w-42 hover:opacity-80 transition">
-                <Image src="/images/apple.webp" alt="App Store" width={30} height={30} />
+              <a
+                href="#"
+                className="border-2 flex items-center text-white px-3 py-1 rounded-lg hover:opacity-80 transition"
+              >
+                <Image
+                  src="/images/apple.webp"
+                  alt="App Store"
+                  width={30}
+                  height={30}
+                />
                 <div className="ml-2">
                   <p className="text-[10px]">Download on the</p>
                   <p className="text-lg font-semibold">App Store</p>

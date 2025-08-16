@@ -22,5 +22,5 @@
 body {
   /* background: var(--background); */
    font-family: var(--font-poppins);
-  color: var(--foreground);
+  /* color: var(--foreground); */
 }
