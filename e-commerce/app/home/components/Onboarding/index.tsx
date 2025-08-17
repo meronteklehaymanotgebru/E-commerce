@@ -28,7 +28,7 @@ export default function SidebarVoucher() {
      );
    }, 6000);
    return () => clearInterval(interval);
- }, []);
+ }, [products.length]);
  return (
    <div className="flex mr-5 ml-40 pb-4">
      <aside className="min-w-[200px] border-r border-gray-200 pr-6">
