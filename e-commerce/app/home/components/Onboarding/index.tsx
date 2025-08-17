@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import { FiChevronRight } from "react-icons/fi";
 import React, { useState, useEffect } from 'react';
 import { FaApple, FaArrowRight } from "react-icons/fa6";
 export default function SidebarVoucher() {
@@ -16,8 +17,8 @@ export default function SidebarVoucher() {
  ];
  const products = [
    '/images/hero.png',
-   '/images/hero-watches.avif',
-   '/images/iphone-hero.avif'
+   '/images/hero_2.webp',
+   '/images/hero_3.jpg'
  ];
  const [currentIndex, setCurrentIndex] = useState(0);
  useEffect(() => {
@@ -29,13 +30,13 @@ export default function SidebarVoucher() {
    return () => clearInterval(interval);
  }, []);
  return (
-   <div className="flex  ml-30 mr-30  p-4">
+   <div className="flex mr-5 ml-40 pb-4">
      <aside className="min-w-[200px] border-r border-gray-200 pr-6">
        <ul className="space-y-4 text-lg font-poppins text-black">
          {menuItems.map((item, idx) => (
-           <li key={idx} className="flex justify-between items-center cursor-pointer hover:font-semibold">
+           <li key={idx} className="flex justify-between items-center cursor-pointer hover:text-pink-500">
              <span>{item}</span>
-             {(item === "Woman’s Fashion" || item === "Men’s Fashion") && <span>&gt;</span>}
+             {(item === "Woman’s Fashion" || item === "Men’s Fashion") && <span><FiChevronRight/></span>}
            </li>
          ))}
        </ul>

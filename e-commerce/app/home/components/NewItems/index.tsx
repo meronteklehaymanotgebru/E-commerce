@@ -31,14 +31,14 @@ export default function NewItem() {
                     <div className="relative col-span-2">
                         <Image
                             src="/images/hat.jpg"
-                            alt="Women's Collection"
+                            alt="Women&apos;s Collection"
                             width={250}
                             height={250}
                             className="rounded-lg w-full "
                             style={{transform:"scaleX(-1)"}}
                         />
                         <div className="absolute bottom-6 left-6 text-white">
-                            <h3 className="font-bold text-4xl">Women's Collections</h3>
+                            <h3 className="font-bold text-4xl">Women&apos;s Collections</h3>
                             <p className="text-lg mb-2">Featured woman collections that give you another vibe.</p>
                             <Button
                                 buttonText="Shop Now"
@@ -69,7 +69,7 @@ export default function NewItem() {
                             />
                         </div>
                     </div>
-                    <div className="relative  bg-black">
+                    <div className="relative bg-black">
                         <Image
                             src="/images/gucciperfume.png"
                             alt="Perfume"

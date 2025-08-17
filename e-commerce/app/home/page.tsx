@@ -10,9 +10,6 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";  
 import SidebarVoucher from "./components/Onboarding";
 import Home from "./components/Category";
-import CategoryCard from "./components/CategoryCard";
-import { Monitor, Smartphone, Headphones, Camera, Laptop, Gamepad2, Watch} from "lucide-react";
-import FlashSaleCard from "./components/FlashSales";
 
 const HomePage = () => {
   return (
@@ -29,7 +26,7 @@ const HomePage = () => {
 </div>
       <main className="flex-grow bg-white">
         <SidebarVoucher/>
-
+        
         <Home/>
         <NewItem />
         <Services />

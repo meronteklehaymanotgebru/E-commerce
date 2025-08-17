@@ -1,7 +1,7 @@
 import React from "react";
 
 interface MarkerProps {
-  text:String
+  text:string
 }
 
 function Marker({text}:MarkerProps)

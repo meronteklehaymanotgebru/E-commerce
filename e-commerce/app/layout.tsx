@@ -6,8 +6,8 @@ import "./globals.css";
 const poppins = Poppins({
       subsets: ['latin'],
       display: 'swap',
-      variable: '--font-poppins', // Optional: for using with CSS variables
-      weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // Specify weights if not a variable font
+      variable: '--font-poppins', 
+      weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], 
     });
 const geistSans = Geist({
   variable: "--font-geist-sans",

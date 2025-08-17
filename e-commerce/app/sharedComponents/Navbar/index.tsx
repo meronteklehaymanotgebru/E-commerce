@@ -14,7 +14,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-gray-100 shadow-md md:px-20">
+    <nav className="flex items-center justify-between px-6 py-4 bg-gray-100 md:px-20">
       <span className="font-bold text-3xl text-black cursor-pointer">Exclusive</span>
 
       <ul className="flex space-x-15 text-lg text-black">

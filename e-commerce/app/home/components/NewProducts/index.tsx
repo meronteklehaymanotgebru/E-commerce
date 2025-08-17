@@ -2,7 +2,7 @@
 import { FiHeart } from "react-icons/fi";
 import { IoEyeOutline } from "react-icons/io5";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-
+import Image from "next/image";
 
 function NewProduct({ rating }: { rating: number }) {
  const fullStars = Math.floor(rating);
@@ -58,9 +58,11 @@ export default function ProductCarousel({
              <IoEyeOutline className="text-black" size={18} />
            </button>
          </div>
-         <img
+         <Image
            src={product.image}
            alt={product.name}
+           width={300}
+           height={300}
            className="w-[140px] h-[120px] object-contain mt-14"
          />
          {product.isCart && (

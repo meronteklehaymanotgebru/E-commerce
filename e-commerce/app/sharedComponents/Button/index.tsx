@@ -21,10 +21,10 @@ const Button = ({
   size = "short",
   className = "",
 }: ButtonProps) => {
-  let sizeClass =
+  const sizeClass =
     size === "long" ? "w-64" : size === "full" ? "w-full" : "w-32";
 
-  let variantClass =
+  const variantClass =
     variant === "noBg"
       ? "bg-transparent border border-gray-500 text-gray-700 hover:bg-gray-100"
       : variant === "google"
