@@ -2,7 +2,7 @@ import Button from "@/app/sharedComponents/Button";
 import Image from "next/image";
 export default function Home() {
   return (
-    <div className="flex relative gap-80 py-25 h-140 ml-40 mr-37   bg-black px-20 text-white">
+    <div className="flex relative gap-80 py-25 h-140 ml-30 mr-30   bg-black px-20 text-white">
       <div className="max-w-lg">
         <p className="text-green-500 font-semibold mb-2">Categories</p>
         <h1 className="text-5xl font-bold leading-snug mb-6">

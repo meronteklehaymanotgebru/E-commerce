@@ -35,7 +35,7 @@ const HomePage = () => {
         <h2 className="text-3xl font-bold mb-8 mt-10">Flash Sales</h2>
         <div className="flex justify-between overflow-x-auto">
           <FlashSaleCard
-            image="/images/redgame.png"
+            image="/images/redbgame.png"
             title="HAVIT HV-G92 Gamepad"
             price={120}
             oldPrice={200}
@@ -44,7 +44,7 @@ const HomePage = () => {
             reviews={88}
           />
           <FlashSaleCard
-            image="/images/rkeboard.png"
+            image="/images/keyboard.jpg"
             title="AK-900 Wired Keyboard"
             price={960}
             oldPrice={1160}
@@ -53,7 +53,7 @@ const HomePage = () => {
             reviews={75}
           />
           <FlashSaleCard
-            image="/images/dragontv.png"
+            image="/images/tv.png"
             title="IPS LCD Gaming Monitor"
             price={370}
             oldPrice={400}
@@ -62,7 +62,7 @@ const HomePage = () => {
             reviews={99}
           />
           <FlashSaleCard
-            image="/images/chair.png"
+            image="/images/chair2.avif"
             title="S-Series Comfort Chair"
             price={375}
             oldPrice={400}
@@ -82,7 +82,7 @@ const HomePage = () => {
           <CategoryCard icon={<Smartphone  className="w-16 h-18"/>} label="Phones" />
           <CategoryCard icon={<Laptop className="w-16 h-18" />} label="Computers" />
           <CategoryCard icon={<Watch className="w-16 h-18" />} label="SmartWatch" />
-          <CategoryCard icon={<Camera className="w-16 h-18" />} label="Camera" active />
+          <CategoryCard icon={<Camera className="w-16 h-18" />} label="Camera"  />
           <CategoryCard icon={<Headphones className="w-16 h-18" />} label="HeadPhones" />
           <CategoryCard icon={<Gamepad2 className="w-16 h-18" />} label="Gaming" />
         </div>

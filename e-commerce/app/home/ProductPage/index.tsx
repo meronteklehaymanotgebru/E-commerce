@@ -6,7 +6,7 @@ const products = [
     id: 1,
     name: "Breed Dry Dog Food",
     price: 100,
-    image: "/images/cesar.jpg",
+    image: "/images/cesar.png",
     rating: 3,
     reviews: 35,
   },

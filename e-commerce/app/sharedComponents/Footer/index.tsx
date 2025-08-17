@@ -87,7 +87,7 @@ const Footer = () => {
             Save $3 with App New User Only
           </p>
           <div className="flex items-start gap-3">
-            <Image src="/images/qr.png" alt="QR code" width={120} height={100} />
+            <Image src="/images/qr.png" alt="QR code" width={105} height={100} />
             <div className="flex flex-col gap-3">
               <a
                 href="#"
@@ -101,7 +101,7 @@ const Footer = () => {
                 />
                 <div className="ml-2">
                   <p className="text-[10px]">GET IT ON</p>
-                  <p className="text-lg font-semibold">Google Play</p>
+                  <p className="text-sm font-semibold">Google Play</p>
                 </div>
               </a>
               <a
@@ -116,7 +116,7 @@ const Footer = () => {
                 />
                 <div className="ml-2">
                   <p className="text-[10px]">Download on the</p>
-                  <p className="text-lg font-semibold">App Store</p>
+                  <p className="text-sm font-semibold">App Store</p>
                 </div>
               </a>
             </div>

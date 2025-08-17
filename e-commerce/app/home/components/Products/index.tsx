@@ -21,7 +21,7 @@ const ProductCard: FC<ProductCardProps> = ({
 }) => {
   return (
     
-    <div className="relative bg-white rounded-2xl shadow  w-56">
+    <div className="relative bg-white rounded-2xl shadow  w-56 mb-30">
       <button className="absolute top-2 right-2 text-gray-500">
         <Heart className="w-5 h-5" />
       </button>
